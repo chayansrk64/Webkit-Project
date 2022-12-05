@@ -1,0 +1,645 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
+   
+}
+:root{
+    --color-primary:#FFFFFF;
+    --color-primay-varient:#CECECE;
+
+    --color-secendary:#343A40;
+
+    --color-font-heading:#000;
+    --color-font-paragraph:#999;
+   
+
+
+    --transition: all 400ms ease;
+    --box-shadow: 0 0.3rem 0.3rem rgb(236, 239, 240);
+
+
+    --bg-linear: linear-gradient(135deg, #6f42c1 0%, #4582EC 100%);
+
+}   
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.btn {
+    color: #fff;
+    background-color: #e91e63;
+    border-color: #e91e63;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 2px 2px 0 rgba(233,30,99,.14),0 3px 1px -2px rgba(233,30,99,.2),0 1px 5px 0 rgba(233,30,99,.12);
+}
+ 
+.head {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(119, 29, 107, 0.623), rgba(119, 29, 107, 0.623)), url(./pic/bg0.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+nav{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 10;  
+}
+.window-scrolled{
+    background: radial-gradient(ellipse at center,#585858 0,#232323 100%);
+    box-shadow: 0 1rem 1rem rgba(226, 206, 206, 0.2);
+    
+}
+.brand_logo{
+    width: 100%;  
+}
+.brand_logo p{
+    color: #fff;
+    font-size: 1.3rem;
+    padding-left: 5rem;
+}
+.links{
+    width: 100%;
+    
+    padding-right: 5rem;
+}
+.links ul{
+    display: flex;
+}
+.links ul li a{
+    color: #fff;
+}
+.cart-btn:hover{
+    box-shadow: 0 2px 2px 0 rgba(241, 237, 239, 0.678) 
+}
+.heading{
+    width: 45%;
+    height: 75%;
+    display: grid;
+    align-content:center ; 
+}
+.heading h1{
+    color: #fff;
+    font-size: 5rem;
+}
+.heading h3{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.heading span{
+    color: #000;
+    font-size: 1.5rem;
+    background-color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    margin-left: 0.3rem;
+}
+
+
+.back__section{
+    background:var(--color-primay-varient);
+    max-width: 1440px;
+    position: absolute;
+}
+.sub__section{
+    
+    position: relative;
+    margin: -100px 30px 0; 
+    width: 95%;
+    background: #FFFFFF;
+   
+   
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);
+
+}
+ 
+.content-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    
+}
+.text{
+    width: 60%;
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--color-font-paragraph);
+    padding: 4rem 0;
+    line-height: 2.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.content{
+    text-align: center;
+    padding:4rem 2rem;
+}
+.content .color_red {
+    color: rgb(230, 54, 54);
+    font-size: 4rem;
+}
+.content .color_green{
+    color: rgb(81, 185, 81);
+    font-size: 4rem;
+}
+.content .color_blue{
+    color:rgb(107, 107, 221);
+    font-size: 4rem;
+}
+.content h4{
+    font-size: 1.2rem;
+    padding: 2.3rem 0 1.3rem 0;
+
+}
+.content p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--color-font-paragraph);
+}
+.content-2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    
+}
+.content__left{
+    padding: 2rem;
+    margin-top: 3.5rem;
+}
+.content__left h3 {
+    font-size: 1.6rem;
+}
+.content__left h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-top: 0.3rem;
+    color: var(--color-font-paragraph);
+}
+.content__left p {
+    color: var(--color-font-paragraph);
+    padding: 3rem 0;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    font-weight: 300; 
+}
+.content__right{
+    position: relative; 
+}
+.content__right .fixed{
+    width: 122%;
+    overflow: hidden;  
+  
+}
+ 
+.content__right .move{
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12),0 5px 5px -3px rgba(0,0,0,.2);
+    animation-name: example;
+    animation-duration: 6s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function: ease-in-out;
+     
+}
+
+  @keyframes example {
+      0% {
+        -webkit-transform: translate(120px,0px);
+      }
+      65% {
+        -webkit-transform: translate(0,0);
+      }
+      100% {
+        -webkit-transform: translate(120px,-0px);
+      }
+  } 
+
+  /* --------sub setion-1 end -------- */
+
+  .sub__section-2{
+    background: radial-gradient(ellipse at center,#585858 0,#232323 100%);
+    display: grid;
+    grid-template-columns: 55% 45%;
+    min-height: 600px;
+    place-items: center;
+    
+  }
+  .section-2-left{
+    position:relative;
+  
+  } 
+  .section-2-left .myPic{
+    width: 120%;
+    position: relative;
+    left: -25%; 
+    bottom: 25%;
+     
+  }
+  .section-2-right{
+    padding: 2rem;
+  }
+  .section-2-right h3{
+    color: #fff;
+    font-size: 2rem;
+  }
+  .section-2-right h4 {
+     padding: 2rem 0 1rem 0;
+     color: var(--color-font-paragraph);
+  }
+  .section-2-right p{
+    color: var(--color-font-paragraph);
+    line-height: 1.4rem;
+  }
+    
+  
+
+
+
+
+
+  /* --------sub setion-2 end -------- */
+.sub-section-3{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    place-items: center;
+  
+   
+}
+.section-3-left{
+    padding: 2rem;
+   
+}
+ .section-3-left h3{
+    color: black;
+    font-size: 2rem;
+    padding-bottom: 0.3rem;
+}
+ 
+.section-3-left p{
+    font-weight: 300;
+    padding-top: 3rem;
+    line-height: 1.5rem;
+}
+.section-3-right{
+  
+    height:60%;
+    
+}
+.section-3-right .first-pic{
+    width: 90%;
+   
+}
+.section-3-right .second-pic{
+    width: 35%;
+    position: relative;
+    left: 52%;
+    bottom: 93%;
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12),0 5px 5px -3px rgba(0,0,0,.2);
+    /* animation-name: example_2;
+    animation-duration: 10s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function: ease-in-out
+      */
+      /* transition: all 1s ease-in-out;
+      animation-duration: 5s;
+      animation-fill-mode: both;
+      animation-name:myAny;
+      animation-iteration-count:infinite; 
+       */
+       animation-name: myAny;
+       animation-duration: 7s; 
+       animation-iteration-count:infinite; 
+       animation-timing-function: ease-in-out;
+ 
+}
+
+@keyframes myAny {
+    0% {
+        -webkit-transform: translate3D(20px,20px,0px);
+    }
+    65% {
+        -webkit-transform: translate3D(0px,0px,0px);
+    }
+    100% {
+        -webkit-transform: translate3D(20px,20px,-0px);
+    }
+}
+/* @keyframes example_2 {
+    0% {
+      -webkit-transform: translate(60px,0px);
+    }
+    65% {
+      -webkit-transform: translate(0,0);
+    }
+    100% {
+      -webkit-transform: translate(60px,-0px);
+    }
+}  */
+
+.section-3-right .third-pic{
+    width: 35%;
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12),0 5px 5px -3px rgba(0,0,0,.2);
+    left: -28%;
+    bottom: 74%;
+    position: relative;
+    animation-name: example_3;
+    animation-duration: 10s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes example_3 {
+    0% {
+      -webkit-transform: translate(60px,0px);
+    }
+    65% {
+      -webkit-transform: translate(0,0);
+    }
+    100% {
+      -webkit-transform: translate(60px,-0px);
+    }
+} 
+
+ 
+  /* --------sub setion-3 end -------- */
+.sub-section-4{
+    background: radial-gradient(ellipse at center,#585858 0,#232323 100%);
+
+}
+.section-4-heading{
+    text-align: center;
+    width: 65%;
+}
+.section-4-heading h2{
+    color: #fff;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    padding: 2rem;
+}
+.section-4-heading p{
+    color: var(--color-font-paragraph);
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding-bottom: 5rem;
+   
+}
+ 
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-flow: dense;
+    grid-gap: 2rem;
+    padding: 2rem;
+   
+}
+
+.gallery img{
+    width:100%;
+    height: 100%;
+    object-fit: contain; 
+    transition: var(--transition);
+   
+}
+.gallery img:hover{
+    transform: scale(1.02);
+}
+  /* --------sub setion-4 end -------- */
+
+.sub-section-5{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    padding: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+.section-5-left {
+    padding: 0 3rem ;
+}
+.section-5-left .fa-github{
+    font-size: 4.5rem;
+    color: gray;
+    padding-bottom: 2rem;
+}
+.section-5-left h2{
+    font-size: 2.3rem;
+}
+.section-5-left p{
+    color: var(--color-font-paragraph);
+    font-size: 1.1rem;
+    line-height: 1.6rem; 
+}
+.buttons{
+    margin-top: 2rem;
+}
+.buttons .github-btn{
+    padding: 0.8rem 4.5rem;
+    margin-right: 1rem;
+}
+.fork{
+     border: 1px solid gray;
+     color: #000;
+     padding: 5px; 
+     border-top-left-radius: 4px;
+     border-bottom-left-radius: 4px;
+     background: rgb(208, 214, 214);
+}
+.fork2{
+    border: 1px solid gray;
+    padding: 5px;
+    border-left: none;
+    color: #000;
+    left: -4px;
+    position: relative;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+     
+}
+.fa-star{
+    padding:0 3px;
+}
+.fa-code-fork{
+    padding:0 4px;
+}
+
+.section-5-right{
+    display: flex;
+  
+}
+.demo{
+    padding-right: 4rem;
+   
+}
+.demo h3{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+.demo p{
+  line-height: 3.5rem;
+   border-bottom: 1px solid gray;
+   color: var(--color-font-paragraph);
+}
+.Version h3{
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+.Version p{
+    line-height: 3.5rem;
+    border-bottom: 1px solid gray;
+    color: var(--color-font-paragraph);
+}
+span{
+    color: #000;
+    font-weight: 600;
+}
+.demo p:last-child{
+    border-bottom: none;
+}
+.Version p:last-child{
+    border-bottom: none;
+}
+.fa-xmark{
+    color: red;
+    font-size: 1.1rem;
+    padding-right: 3px;
+}
+.fa-check{
+    color: green;
+    font-size: 1.1rem;
+    padding-right: 3px;
+}
+
+
+/* --------sub setion-5 end -------- */
+
+
+.sub-section-6{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.623)), url(./pic/background-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section-6-heading{
+    text-align: center;
+    color: #fff;
+    padding-top: 5rem;
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing:1px;
+}
+.section-6-groups{
+    display: flex;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.sub-section-6-group{
+    padding-bottom: 7rem;
+    border-right: 1px solid white;
+    width: 25%;
+}
+/* @media screen and (max-width:786px) {
+    .sub-section-6-group {
+        width: 100%;
+    }  
+} */
+.sub-section-6-group:last-child{
+    border: none;
+}
+.sub-section-6-group i{
+    font-size: 3.2rem;
+    padding: 3rem;
+}
+.sub-section-6-group h4{
+    font-size: 1.2rem;
+    padding-bottom:2rem ;
+}
+.sub-section-6-group p{
+    line-height: 1.5rem;
+    padding: 0rem 1.2rem;
+     
+}
+/* --------sub setion-6 end -------- */
+
+
+.sub-section-7{
+    background: #fff;
+}
+.section-7-heading{
+    text-align: center;
+    width: 70%;
+}
+.section-7-heading h2{
+    padding-top: 4rem;
+    font-size: 2.4rem;
+}
+.section-7-heading p{
+    font-weight: 500;
+    line-height: 1.5rem;
+    padding: 1.5rem;
+    color: var(--color-font-paragraph);
+    font-size: 1.1rem;
+    letter-spacing: 0.8px;
+}
+.mens{
+    display: flex;
+ 
+}
+.men{
+   display: flex;  
+   width: 100%;
+}
+.men img{
+    width: 17%;
+    height: 55%;
+    border-radius: 10%;
+    box-shadow: 0 24px 34px black;
+    object-fit: cover;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.men-head h4{
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+.men-head p{
+    color: var(--color-font-paragraph);
+    line-height: 1.5rem;
+}
+.companies{
+    display: flex;
+    padding: 3rem;
+}
+.companies img{
+   width: 15%;
+    
+}
+/* --------sub setion-7 end -------- */
+
+.try{
+    color: red;
+    position: relative;
+
+}
